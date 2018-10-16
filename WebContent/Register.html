@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+
+body {font-family:Verdana, Arial, sans-serif;
+      background-color: #FDFEFE;
+}
+
+
+header{ background-color: #FDFEFE;
+        color: #000000; 
+        font-size: 150%; 
+        padding: 50px;
+		width: 50%;
+}
+
+#wrapper { background-color: #FCFCFC; 
+           color: #000066;
+           width: 50%;
+		   margin: auto;
+           min-width:1000px;
+} 
+
+
+#content { 
+	          width: 50%;
+	          padding-left: 10px;
+			  background-color: #FCFCFC;
+} 
+
+
+
+#div1 {
+		padding: 5px; font-size:0.9em;
+		}
+
+#div2 {
+	text-decoration: none;
+	text-align: right;
+	color: #A58366;
+	font-weight: bold;
+	font-size:0.5em;
+}
+
+nav a {
+	text-decoration: none;
+	text-align: center;
+	color: #F08080;
+	font-weight: bold;
+}
+input[type=text], input[type=password], input[type=email], input[type=number] {
+    width: 50%;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input:focus {
+    background-color: #FF4A56;
+}
+
+textarea {
+    width: 50%;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+	}
+textarea:focus {
+    background-color: #FF4A56;
+
+}
+input[type=submit], input[type=reset] {
+    background-color: white;
+    border: 1px solid #FF4A56;
+    line-height: 0;
+    font-size: 17px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px 15px ;
+    border-radius: 60px;
+    color: #FF4A56;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+    }
+
+input[type=submit], input[type=reset] :hover{
+	color: white;
+	background-color: #FF4A56;
+}
+
+input[type=submit], input[type=reset] :focus{
+	color: white;
+	background-color: #FF4A56;
+}
+</style> 
+
+<body>
+<div class="wrapper">
+<header><div class = "div1">
+NEW USER REGISTRATION
+</div>
+</header>
+<div class = "content">
+  <form action="RegisterServlet" method="GET">
+  
+  <label>User: </label><input type="text" name = "user"><br>
+  <label>Password:</label> <input type = "password" name = "pass"><br>
+  <label>Re-type Password:</label><input type = "password"><br>
+  <label>E-mail:</label><input type="email" name="email"><br>
+  <label>Contact No:</label><input type="number" name="contact"><br>
+  <label>Gender:</label>
+  <input type="radio" name = "gender" value ="male">Male
+  <input type ="radio" name="gender" value="female">Female<br>
+  <label>Address:</label><textarea name = "address" rows="3" cols="30"></textarea><br>
+  <label>Country:</label>
+  <select name="country">
+  <option value="Singapore">Singapore</option>
+  <option value="America">America</option>
+  <option value="China">China</option>
+  <option value="Malaysia">Malaysia</option>
+  <option value="Indonesia">Indonesia</option>
+  <option value="India">India</option>
+</select><br>
+<br>
+  <label>Hobbies:</label>
+    <input type="checkbox" value="reading" name="hobby">reading
+    <input type="checkbox" value="sleeping" name="hobby">sleeping
+    <input type="checkbox" value="eating" name="hobby">eating
+  <br>
+  
+<!-- The submit and reset buttons -->
+      <p>
+    <input type="submit" value = "Register"  />
+    <input type ="reset"  value = "Clear" />
+      </p>
+      <br>
+      <br>
+      </form></div></div></div>
+</body>
+</html>
